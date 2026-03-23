@@ -40,7 +40,7 @@ MODEL              = os.getenv("MODEL", "mistralai/mistral-7b-instruct:free")
 BOT_NAME      = "DexMind"
 BOT_VERSION   = "3.23.26"
 DEVELOPER     = "PraX"
-DEV_TELEGRAM  = "@Dex_Error_404"
+DEV_TELEGRAM  = " @Dex_Error_404 "
 
 # Timezone — Railway UTC me hota hai, IST set kar diya
 TIMEZONE = ZoneInfo("Asia/Kolkata")
