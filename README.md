@@ -7,8 +7,6 @@
 ## ✨ Features
 
 - 🧠 **Session Memory** — remembers last 5 conversations per user
-- 🌦 **Live Weather** — just mention a city (e.g. *weather in Mumbai*)
-- 🕐 **Date & Time** — real-time IST date/time support
 - 🔀 **Switchable AI Model** — change model via Railway env variable, no code edit needed
 - ⚡ **Crash-proof** — async, non-blocking, fully error-handled
 
