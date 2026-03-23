@@ -51,6 +51,7 @@ cd telegram-ai-agent
 mistralai/mistral-7b-instruct:free
 meta-llama/llama-3-8b-instruct:free
 google/gemma-3-4b-it:free
+more free models
 ```
 
 Change model anytime from Railway Variables — no redeploy needed.
