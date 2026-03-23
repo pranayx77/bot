@@ -1,14 +1,16 @@
-# 🤖 Telegram AI Agent
+# 🧠 DexMind — Telegram AI Agent
 
-A smart Telegram chatbot powered by **OpenRouter.ai** free LLMs, deployed on **Railway**.
+> A smart, personal AI assistant on Telegram — powered by **OpenRouter.ai** free LLMs and deployed on **Railway**.
 
 ---
 
 ## ✨ Features
 
 - 🧠 **Session Memory** — remembers last 5 conversations per user
+- 🌦 **Live Weather** — just mention a city (e.g. *weather in Mumbai*)
+- 🕐 **Date & Time** — real-time IST date/time support
 - 🔀 **Switchable AI Model** — change model via Railway env variable, no code edit needed
-- ⚡ **Crash-proof** — async, non-blocking, error-handled
+- ⚡ **Crash-proof** — async, non-blocking, fully error-handled
 
 ---
 
@@ -18,7 +20,7 @@ A smart Telegram chatbot powered by **OpenRouter.ai** free LLMs, deployed on **R
 |---|---|
 | `/start` | Welcome message |
 | `/help` | Show all commands |
-| `/clear` | Clear chat history |
+| `/clear` | Clear your chat history |
 | `/model` | Show current AI model |
 | `/datetime` | Current IST date & time |
 | `/developer` | Developer info |
@@ -29,8 +31,8 @@ A smart Telegram chatbot powered by **OpenRouter.ai** free LLMs, deployed on **R
 
 **1. Clone the repo**
 ```bash
-git clone https://github.com/yourusername/telegram-ai-agent.git
-cd telegram-ai-agent
+git clone https://github.com/yourusername/dexmind-bot.git
+cd dexmind-bot
 ```
 
 **2. Set environment variables in Railway dashboard**
@@ -51,7 +53,7 @@ cd telegram-ai-agent
 mistralai/mistral-7b-instruct:free
 meta-llama/llama-3-8b-instruct:free
 google/gemma-3-4b-it:free
-more free models
+more free models available
 ```
 
 Change model anytime from Railway Variables — no redeploy needed.
