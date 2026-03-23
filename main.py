@@ -15,6 +15,7 @@ Setup:
     3. Fill in TELEGRAM_TOKEN and OPENROUTER_API_KEY below
 """
 
+import os
 import re
 import logging
 import requests
@@ -30,14 +31,14 @@ from telegram.ext import (
 
 # ─────────────────────────── CONFIG ───────────────────────────────────────────
 
-TELEGRAM_TOKEN    = "5444970447:AAGt8LYeuDbKDbFpFg7S-he7_wf3QkF-llY"       # From @BotFather
-OPENROUTER_API_KEY = "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"       # From openrouter.ai/keys
+TELEGRAM_TOKEN     = os.getenv("TELEGRAM_TOKEN")      # From @BotFather
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")  # From openrouter.ai/keys
 
 # Free models on OpenRouter (pick one):
-#   "stepfun/step-3.5-flash:free"
+#   "mistralai/mistral-7b-instruct:free"
 #   "meta-llama/llama-3-8b-instruct:free"
 #   "google/gemma-3-4b-it:free"
-MODEL = "stepfun/step-3.5-flash:free"
+MODEL = "mistralai/mistral-7b-instruct:free"
 
 SYSTEM_PROMPT = (
     "You are a helpful and friendly AI assistant in a Telegram chat. "
